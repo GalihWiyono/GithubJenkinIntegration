@@ -1,8 +1,16 @@
 public class Number {
 public static void main(String args[]) {
-System.out.println("Hello World");
-for (int i=0; i<10; i++){
-System.out.println(i);
-}
+int count;
+        for (int i = 1; i <= 100; i++) {
+            count = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                System.out.println(i);
+            }
+        }
 }
 }
